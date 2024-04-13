@@ -45,7 +45,7 @@
                     
                     if(email == values.mail && pass == values.password){
                         // console.log(Users)
-                        window.location.href="/Time.html"
+                        window.location.href="./Time.html"
                     }else{
                         console.log("Not Found this email and password");
                     }
