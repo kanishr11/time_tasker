@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tacker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet">
+  </head>
+  <body>
+    <div class="container bg-red">
+      <div class="fs-3 text-center">
+        Time Tacker
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="content">
+            <table id="table-list" class="table">
+              <thead>
+                <tr>
+                  <td>CATEGORY</td>
+                  <td>SUB-CATEGORY</td>
+                  <td>DURATION</td>
+                  <td>TASK</td>
+                  <td></td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <!-- <button type="button" class="btn btn-primary">1</button>
+            <div class="btn-group" role="group"> -->
+              <!-- <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li><a class="dropdown-item" href="#"> Category 1</a></li>
+                <li><a class="dropdown-item" href="#">Category 2</a></li>
+                <li><a class="dropdown-item" href="#">Work</a></li>
+                <li><a class="dropdown-item" href="#">Study</a></li>
+              </ul> -->
+            </div>
+          </div>
+      </div>
+        <div class="col-sm-4">
+          <form action method="post">
+            <label for="category" class="fs-5">Category</label>
+                  <input id="input1" type="text" class="form-control"placeholder="Category" aria-label="Category">
+            <label for="sub-category" class="fs-5">Sub-Category</label>
+                  <input id="input2" type="text" class="form-control"placeholder="Sub-Category" aria-label="Sub-Category">
+            <label for="duration" class="fs-3">Duration</label>
+            <h1 class="stopwatch">00:00:00</h1>
+            <button type="button" class="btn bg-success text-white" onclick="starting()"id="startbtn">Start</button>
+            <!-- <button type="button" class="btn bg-danger text-white" onclick="resetting()">Reset</button> -->
+            <br>
+            <!-- <input id="duration" type="text" class="form-control"
+              placeholder="Duration" aria-label="Duration"> -->
+            <label for="task" class="fs-5">Task</label>
+                  <input id="input3" type="text" class="form-control"placeholder="Task" aria-label="Task">
+            <button type="submit" class="btn bg-info text-white mt-1">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="Time.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
